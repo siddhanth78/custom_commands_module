@@ -12,7 +12,6 @@ def command_args(line,sep=" "):
     for i in range(1,len(line_list)):
         arguments = line_list[i].split(" ")
         argument = list(i for i in arguments if i.strip()!="")
-        print(argument)
         args.append(argument)
     arg = list(i for i in args if i!="")
     return list_of_words,arg
